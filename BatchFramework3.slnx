@@ -1,0 +1,8 @@
+<Solution>
+  <Project Path="Batch.Api.Host/Batch.Api.Host.csproj" />
+  <Project Path="Batch.DataAccess/Batch.DataAccess.csproj" />
+  <Project Path="Batch.Domain/Batch.Domain.csproj" />
+  <Project Path="Batch.Orchestrator.Host/Batch.Orchestrator.Host.csproj" />
+  <Project Path="Batch.Services/Batch.Services.csproj" />
+  <Project Path="Batch.Tests/Batch.Tests.csproj" />
+</Solution>
