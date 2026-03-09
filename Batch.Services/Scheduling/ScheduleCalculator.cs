@@ -119,14 +119,12 @@ public sealed class ScheduleCalculator(IAdministrationDA administrationDA)
         {
             return TimeZoneInfo.FindSystemTimeZoneById(timeZoneId);
         }
-        catch (TimeZoneNotFoundException ex)
+        catch (TimeZoneNotFoundException)
         {
-            _ = ex;
             throw new ValidationException($"Time zone '{timeZoneId}' was not found.");
         }
-        catch (InvalidTimeZoneException ex)
+        catch (InvalidTimeZoneException)
         {
-            _ = ex;
             throw new ValidationException($"Time zone '{timeZoneId}' is invalid.");
         }
     }
